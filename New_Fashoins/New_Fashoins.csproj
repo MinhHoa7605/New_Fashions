@@ -1,0 +1,383 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3D623A46-F0DA-4275-8A69-8B947BB479C7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>New_Fashoins</RootNamespace>
+    <AssemblyName>New_Fashoins</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="bags.aspx" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="cart.aspx" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\component.css" />
+    <Content Include="css\etalage.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\megamenu.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="css\style.css" />
+    <Content Include="footwear.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="images\a1.jpg" />
+    <Content Include="images\ab1.jpg" />
+    <Content Include="images\ab2.jpg" />
+    <Content Include="images\ab3.jpg" />
+    <Content Include="images\ab4.jpg" />
+    <Content Include="images\ab5.jpg" />
+    <Content Include="images\ab6.jpg" />
+    <Content Include="images\ab7.jpg" />
+    <Content Include="images\ab8.jpg" />
+    <Content Include="images\arw.png" />
+    <Content Include="images\avatar.jpg" />
+    <Content Include="images\b-arrow.png" />
+    <Content Include="images\b1.jpg" />
+    <Content Include="images\b2.jpg" />
+    <Content Include="images\b3.jpg" />
+    <Content Include="images\b4.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\banner33.jpg" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\bg3.jpg" />
+    <Content Include="images\bs1.jpg" />
+    <Content Include="images\bs2.jpg" />
+    <Content Include="images\bs3.jpg" />
+    <Content Include="images\bs4.jpg" />
+    <Content Include="images\bs5.jpg" />
+    <Content Include="images\bs6.jpg" />
+    <Content Include="images\c1.jpg" />
+    <Content Include="images\c2.jpg" />
+    <Content Include="images\c3.jpg" />
+    <Content Include="images\c4.jpg" />
+    <Content Include="images\c5.jpg" />
+    <Content Include="images\c6.jpg" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\cls.png" />
+    <Content Include="images\do.png" />
+    <Content Include="images\HinhNen1.jpg" />
+    <Content Include="images\HinhNen2.jpg" />
+    <Content Include="images\Hinh\1.jpg" />
+    <Content Include="images\Hinh\10.jpg" />
+    <Content Include="images\Hinh\11.jpg" />
+    <Content Include="images\Hinh\12.jpg" />
+    <Content Include="images\Hinh\13.jpg" />
+    <Content Include="images\Hinh\14.jpg" />
+    <Content Include="images\Hinh\15.jpg" />
+    <Content Include="images\Hinh\16.jpg" />
+    <Content Include="images\Hinh\17.jpg" />
+    <Content Include="images\Hinh\18.jpg" />
+    <Content Include="images\Hinh\19.jpg" />
+    <Content Include="images\Hinh\2.jpg" />
+    <Content Include="images\Hinh\20.jpg" />
+    <Content Include="images\Hinh\21.jpg" />
+    <Content Include="images\Hinh\22.jpg" />
+    <Content Include="images\Hinh\23.jpg" />
+    <Content Include="images\Hinh\24.jpg" />
+    <Content Include="images\Hinh\3.jpg" />
+    <Content Include="images\Hinh\4.jpg" />
+    <Content Include="images\Hinh\5.jpg" />
+    <Content Include="images\Hinh\6.jpg" />
+    <Content Include="images\Hinh\7.jpg" />
+    <Content Include="images\Hinh\8.jpg" />
+    <Content Include="images\Hinh\9.jpg" />
+    <Content Include="images\Hinh\ab1.jpg" />
+    <Content Include="images\Hinh\ab2.jpg" />
+    <Content Include="images\Hinh\ab3.jpg" />
+    <Content Include="images\Hinh\ab4.png" />
+    <Content Include="images\Hinh\ab5.jpg" />
+    <Content Include="images\Hinh\ab6.jpg" />
+    <Content Include="images\Hinh\ab7.jpg" />
+    <Content Include="images\Hinh\ab8.jpg" />
+    <Content Include="images\Hinh\bg1.jpg" />
+    <Content Include="images\Hinh\bg2.jpg" />
+    <Content Include="images\Hinh\bg3.jpg" />
+    <Content Include="images\Hinh\g1.jpg" />
+    <Content Include="images\Hinh\g2.jpg" />
+    <Content Include="images\Hinh\g3.jpg" />
+    <Content Include="images\Hinh\g4.jpg" />
+    <Content Include="images\Hinh\g5.jpg" />
+    <Content Include="images\Hinh\g6.jpg" />
+    <Content Include="images\Hinh\img-0983.jpg" />
+    <Content Include="images\Hinh\m1.jpg" />
+    <Content Include="images\Hinh\m2.jpg" />
+    <Content Include="images\Hinh\m3.jpg" />
+    <Content Include="images\Hinh\m4.jpg" />
+    <Content Include="images\Hinh\m5.jpg" />
+    <Content Include="images\Hinh\m6.jpg" />
+    <Content Include="images\Hinh\t1.jpg" />
+    <Content Include="images\Hinh\t2.jpg" />
+    <Content Include="images\Hinh\t3.jpg" />
+    <Content Include="images\Hinh\t4.jpg" />
+    <Content Include="images\Hinh\t5.jpg" />
+    <Content Include="images\Hinh\t6.jpg" />
+    <Content Include="images\Hinh\thong_tin.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\m1.jpg" />
+    <Content Include="images\m2.jpg" />
+    <Content Include="images\m3.jpg" />
+    <Content Include="images\m4.jpg" />
+    <Content Include="images\m5.jpg" />
+    <Content Include="images\m6.jpg" />
+    <Content Include="images\nav-icon.png" />
+    <Content Include="images\pic-1.jpg" />
+    <Content Include="images\pic-2.jpg" />
+    <Content Include="images\pic-3.jpg" />
+    <Content Include="images\plus.png" />
+    <Content Include="images\p_minus.png" />
+    <Content Include="images\p_plus.png" />
+    <Content Include="images\s1.jpg" />
+    <Content Include="images\s2.jpg" />
+    <Content Include="images\s3.jpg" />
+    <Content Include="images\s4.jpg" />
+    <Content Include="images\social.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="js\easyResponsiveTabs.js" />
+    <Content Include="js\jquery.easydropdown.js" />
+    <Content Include="js\jquery.etalage.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\megamenu.js" />
+    <Content Include="js\modernizr.custom.js" />
+    <Content Include="js\simpleCart.js" />
+    <Content Include="js\simpleCart.min.js" />
+    <Content Include="login.aspx" />
+    <Content Include="men.aspx" />
+    <Content Include="QLShopBanHang.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>QLShopBanHang.Context.cs</LastGenOutput>
+      <DependentUpon>QLShopBanHang.edmx</DependentUpon>
+    </Content>
+    <Content Include="QLShopBanHang.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLShopBanHang.edmx</DependentUpon>
+      <LastGenOutput>QLShopBanHang.cs</LastGenOutput>
+    </Content>
+    <Content Include="registration.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="products.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bags.aspx.cs">
+      <DependentUpon>bags.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bags.aspx.designer.cs">
+      <DependentUpon>bags.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChungLoai.cs">
+      <DependentUpon>QLShopBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="footwear.aspx.cs">
+      <DependentUpon>footwear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="footwear.aspx.designer.cs">
+      <DependentUpon>footwear.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HangHoa.cs">
+      <DependentUpon>QLShopBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="men.aspx.cs">
+      <DependentUpon>men.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="men.aspx.designer.cs">
+      <DependentUpon>men.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NhanVien.cs">
+      <DependentUpon>QLShopBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopBanHang.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopBanHang.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopBanHang.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopBanHang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QLShopBanHang.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLShopBanHang.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <EntityDeploy Include="QLShopBanHang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLShopBanHang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="QLShopBanHang.edmx.diagram">
+      <DependentUpon>QLShopBanHang.edmx</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49572</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49572/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
